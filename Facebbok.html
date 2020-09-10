@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width: 600px){
+
+        }
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'PT Sans Narrow', 'sans-serif';
+        }
+        .main_div{
+            height:100vh;
+            width:100vw;
+            background-color: hsl(180, 50%, 98%);
+            display: grid;
+            place-items: center;
+        }
+        .login{
+            padding:2rem;
+            border-radius: 16px;
+            background-color: hsl(180, 62%, 92%);
+            box-shadow: 5px 10px #888888;
+        }
+        .logo{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img{
+            margin-right:8px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            padding:2rem;
+        }
+        .form input{
+            margin-bottom: 1rem;
+        }
+        .ipt{
+            height:1rem;
+            padding:0.5rem;
+            outline: none;
+            border-radius:16px;
+        }
+        .sbt{
+            padding:5px 5px 5px 5px;
+            border-radius: 6px;
+            background-color: #3B5998;
+            color:white;
+            font-weight:300;
+            font-size:20px;
+            border:2px solid white;
+            outline:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="login">
+            <div class="logo">
+                <img src="./Logo.png" height="40px" width="40px"/>
+                <h2>FaceBook</h2>
+            </div>
+            <div class="login_f">
+                <form name="f1" method="POST" class="form">
+                   <input class="ipt" type="text" placeholder="Enter Email or Phone" name="username"/>
+                   <input class="ipt" type="password" placeholder="Enter Your Password" name="password"/>
+                   <input class="sbt" type="submit" name="lgn" Value="Login"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
